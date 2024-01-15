@@ -56,8 +56,8 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function game() {
-    const playerSelection = "rock";
+function game(choice) {
+    const playerSelection = choice;
     const computerSelection = getComputerChoice();
     let result = playRound(playerSelection,computerSelection);
     if (result == 1) {
@@ -75,8 +75,22 @@ function game() {
 
 let score = 0;
 let pc_score = 0;
-game();
-game();
-game();
-game();
-game();
+
+const rockButton = document.querySelector('#rock')
+const paperButton = document.querySelector('#paper')
+const scissorsButton = document.querySelector('#scissors')
+
+rockButton.addEventListener('click', function (e) {
+    let choice = e.target.id;
+    console.log(choice);
+});
+
+paperButton.addEventListener('click', function (e) {
+    let choice = e.target.id;
+    console.log(choice);
+});
+
+scissorsButton.addEventListener('click', function (e) {
+    let choice = e.target.id;
+    console.log(choice);
+});

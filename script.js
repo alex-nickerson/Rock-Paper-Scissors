@@ -61,15 +61,29 @@ function game(choice) {
     const computerSelection = getComputerChoice();
     let result = playRound(playerSelection,computerSelection);
     if (result == 1) {
-        document.querySelector('#playerScore').innerHTML = score + 1;
+        score = score + 1;
+        document.querySelector('#playerScore').innerHTML = score;
     }
     if (result == 2) {
-        document.querySelector('#playerScore').innerHTML = pc_score + 1;
+        pc_score = pc_score + 1;
+        document.querySelector('#pcScore').innerHTML = pc_score;
     }
     if (result == 0) {
     }
-    console.log("Your score: " + score);
-    console.log("Computer score:  " + pc_score);
+    if (score == 5) {
+        alert("You win!")
+        score = 0
+        pc_score = 0
+        document.querySelector('#playerScore').innerHTML = score;
+        document.querySelector('#pcScore').innerHTML = pc_score;
+    }
+    if (pc_score == 5) {
+        alert("You lose!")
+        score = 0
+        pc_score = 0
+        document.querySelector('#playerScore').innerHTML = score;
+        document.querySelector('#pcScore').innerHTML = pc_score;
+    }
 }
 
 let score = 0;

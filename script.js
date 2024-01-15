@@ -61,13 +61,12 @@ function game(choice) {
     const computerSelection = getComputerChoice();
     let result = playRound(playerSelection,computerSelection);
     if (result == 1) {
-        score = score + 1;
+        document.querySelector('#playerScore').innerHTML = score + 1;
     }
     if (result == 2) {
-        pc_score = pc_score + 1;
+        document.querySelector('#playerScore').innerHTML = pc_score + 1;
     }
     if (result == 0) {
-        game();
     }
     console.log("Your score: " + score);
     console.log("Computer score:  " + pc_score);
@@ -82,15 +81,15 @@ const scissorsButton = document.querySelector('#scissors')
 
 rockButton.addEventListener('click', function (e) {
     let choice = e.target.id;
-    console.log(choice);
+    game(choice);
 });
 
 paperButton.addEventListener('click', function (e) {
     let choice = e.target.id;
-    console.log(choice);
+    game(choice);
 });
 
 scissorsButton.addEventListener('click', function (e) {
     let choice = e.target.id;
-    console.log(choice);
+    game(choice);
 });

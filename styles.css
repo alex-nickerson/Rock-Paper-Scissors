@@ -16,7 +16,14 @@ button{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    border: 1px solid blue;
+}
+
+.title h3{
+    margin-top: -20px;
+}
+
+.title h4{
+    margin-top: -10px;
 }
 
 .buttons{
@@ -33,6 +40,7 @@ button{
     margin-left: 25%;
     margin-right: 25%;
     background-color: #EFCA08;
+    margin-top: 50px;
 }
 
 .scores p{
@@ -54,4 +62,26 @@ button{
     gap: 10px;
     background-color: #EFCA08;
     text-align: center;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 30px;
+}
+
+.message p{
+    background-color: #F08700;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.end{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }

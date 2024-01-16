@@ -12,13 +12,14 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
+    document.getElementById("message").style.padding = '20px'
     if (playerSelection == "rock") {
         if (computerSelection == "rock") {
             document.querySelector('#message').innerHTML = "It was a Tie!";
             return 0;
         }
         if (computerSelection == "paper") {
-            document.querySelector('#message').innerHTML = ("Your lose! Paper beats Rock.");
+            document.querySelector('#message').innerHTML = ("You lose! Paper beats Rock.");
             return 2;
         }
         if (computerSelection == "scissors") {

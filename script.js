@@ -14,43 +14,43 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == "rock") {
         if (computerSelection == "rock") {
-            console.log("Tie!");
+            document.querySelector('#message').innerHTML = "It was a Tie!";
             return 0;
         }
         if (computerSelection == "paper") {
-            console.log("Your lose! Paper beats Rock.");
+            document.querySelector('#message').innerHTML = ("Your lose! Paper beats Rock.");
             return 2;
         }
         if (computerSelection == "scissors") {
-            console.log("You win! Rock beats Scissors.");
+            document.querySelector('#message').innerHTML = ("You win! Rock beats Scissors.");
             return 1;
         }
     }
     if (playerSelection == "paper") {
         if (computerSelection == "rock") {
-            console.log("You win! Paper beats Rock.");
+            document.querySelector('#message').innerHTML = ("You win! Paper beats Rock.");
             return 1;
         }
         if (computerSelection == "paper") {
-            console.log("Tie!");
+            document.querySelector('#message').innerHTML = "It was a Tie!";;
             return 0;
         }
         if (computerSelection == "scissors") {
-            console.log("You lose! Scissors beats Paper.");
+            document.querySelector('#message').innerHTML = ("You lose! Scissors beats Paper.");
             return 2;
         }
     }
     if (playerSelection == "scissors") {
         if (computerSelection == "rock") {
-            console.log("You lose! Rock beats Scisssors!");
+            document.querySelector('#message').innerHTML = ("You lose! Rock beats Scisssors!");
             return 2;
         }
         if (computerSelection == "paper") {
-            console.log("You win! Scissors beats Paper.");
+            document.querySelector('#message').innerHTML = ("You win! Scissors beats Paper.");
             return 1;
         }
         if (computerSelection == "scissors") {
-            console.log("Tie!");
+            document.querySelector('#message').innerHTML = "It was a Tie!";;
             return 0;
         }
     }

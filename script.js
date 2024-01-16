@@ -70,19 +70,15 @@ function game(choice) {
     }
     if (result == 0) {
     }
-    if (score == 5) {
-        alert("You win!")
-        score = 0
-        pc_score = 0
-        document.querySelector('#playerScore').innerHTML = score;
-        document.querySelector('#pcScore').innerHTML = pc_score;
-    }
-    if (pc_score == 5) {
-        alert("You lose!")
-        score = 0
-        pc_score = 0
-        document.querySelector('#playerScore').innerHTML = score;
-        document.querySelector('#pcScore').innerHTML = pc_score;
+    if (score == 5 || pc_score == 5) {
+        const container = document.querySelector('#end');
+        const playAgain = document.createElement('button');
+        playAgain.classList.add('playAgain');
+        playAgain.textContent = "Play Again";
+        container.appendChild(playAgain);
+        document.getElementById("rock").disabled = true;
+        document.getElementById("paper").disabled = true;
+        document.getElementById("scissors").disabled = true;
     }
 }
 

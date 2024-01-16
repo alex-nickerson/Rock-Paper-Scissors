@@ -1,3 +1,15 @@
 .buttons{
     border: 1px solid blue;
 }
+
+.playerScore{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.pcScore{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

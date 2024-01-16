@@ -1,10 +1,10 @@
 *{
-    background-color: #00A6A6;
+    background-color: #46494C;
 }
 
 button{
-    background-color: #EFCA08;
-    border: 2px solid #EFCA08;
+    background-color: #1985A1;
+    border: 2px solid #1985A1;
     padding: 50px;
     font-size: 24px;
     border-radius: 10px;
@@ -16,6 +16,7 @@ button{
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    color: #DCDCDD
 }
 
 .title h3{
@@ -39,12 +40,12 @@ button{
     justify-content: center;
     margin-left: 25%;
     margin-right: 25%;
-    background-color: #EFCA08;
+    background-color: #1985A1;
     margin-top: 50px;
 }
 
 .scores p{
-    background-color: #EFCA08;
+    background-color: #1985A1;
     font-size: 24px;
     padding: 10px;
 }
@@ -53,14 +54,14 @@ button{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    background-color: #EFCA08;
+    background-color: #1985A1;
 }
 
 .pcScore{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    background-color: #EFCA08;
+    background-color: #1985A1;
     text-align: center;
 }
 
@@ -73,7 +74,7 @@ button{
 }
 
 .message p{
-    background-color: #F08700;
+    background-color: #d87a00;
     font-size: 24px;
     font-weight: bold;
     text-align: center;

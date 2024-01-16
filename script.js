@@ -75,6 +75,9 @@ function game(choice) {
         const playAgain = document.createElement('button');
         playAgain.classList.add('playAgain');
         playAgain.textContent = "Play Again";
+        playAgain.addEventListener('click', function (e) {
+            window.location.reload();
+        });
         container.appendChild(playAgain);
         document.getElementById("rock").disabled = true;
         document.getElementById("paper").disabled = true;

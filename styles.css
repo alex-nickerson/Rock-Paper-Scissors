@@ -1,15 +1,57 @@
-.buttons{
+*{
+    background-color: #00A6A6;
+}
+
+button{
+    background-color: #EFCA08;
+    border: 2px solid #EFCA08;
+    padding: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
     border: 1px solid blue;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+.scores{
+    display: flex;
+    gap: 180px;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #EFCA08;
+}
+
+.scores p{
+    background-color: #EFCA08;
+    font-size: 24px;
+    padding: 10px;
 }
 
 .playerScore{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    background-color: #EFCA08;
 }
 
 .pcScore{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    background-color: #EFCA08;
+    text-align: center;
 }

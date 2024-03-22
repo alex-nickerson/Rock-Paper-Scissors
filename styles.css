@@ -1,22 +1,26 @@
 *{
-    background-color: #46494C;
+    background-color: #000814;
 }
 
 button{
-    background-color: #1985A1;
-    border: 2px solid #1985A1;
+    background-color: #003566;
+    border: 2px solid #003566;
     padding: 50px;
     font-size: 24px;
     border-radius: 10px;
     cursor: pointer;
+    color: #DCDCDD;
+    width: 250px;
+    transition: ease-out 0.2s;
 }
 
 .title{
-    display: flex;
-    justify-content: center;
     text-align: center;
     flex-direction: column;
-    color: #DCDCDD
+    color: #DCDCDD;
+    padding: 10px;
+    max-width: fit-content;
+    margin: auto;
 }
 
 .title h3{
@@ -30,8 +34,23 @@ button{
 .buttons{
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     margin-top: 100px;
+}
+
+#rock:hover{
+    background-color: #036600;
+    border: 2px solid #036600;
+}
+
+#paper:hover{
+    background-color: #036600;
+    border: 2px solid #036600;
+}
+
+#scissors:hover{
+    background-color: #036600;
+    border: 2px solid #036600;
 }
 
 .scores{
@@ -40,28 +59,30 @@ button{
     justify-content: center;
     margin-left: 25%;
     margin-right: 25%;
-    background-color: #1985A1;
+    background-color: #003566;
     margin-top: 50px;
 }
 
 .scores p{
-    background-color: #1985A1;
+    background-color: #003566;
     font-size: 24px;
     padding: 10px;
+    font-weight: bold;
+    color: #DCDCDD;
 }
 
 .playerScore{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    background-color: #1985A1;
+    background-color: #003566;
 }
 
 .pcScore{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    background-color: #1985A1;
+    background-color: #003566;
     text-align: center;
 }
 
@@ -74,7 +95,7 @@ button{
 }
 
 .message p{
-    background-color: #d87a00;
+    background-color: #FFC300;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -85,4 +106,9 @@ button{
     display: flex;
     justify-content: center;
     margin-top: 30px;
+}
+
+.playAgain:hover{
+    background-color: #036600;
+    border: 2px solid #036600;
 }
